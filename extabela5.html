@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/C.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 15px;
+        } 
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .nome {
+            background-color: #89f6fa;
+        }
+
+        .grupo {
+            background-color: #d8aeff;
+        }
+
+        div.autox {
+            overflow-x: auto;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colgroup e Responsividade</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, molestiae. Atque deleniti quae sit nisi architecto? Quas consequuntur, vero alias beatae aliquam odio! Veritatis obcaecati cum est odit distinctio iusto.</p>
+    <div class="autox">
+        <table>
+            <colgroup>
+                <col class="nome">
+                <col class="grupo" span="3">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <thead>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissao</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>Feminino</td>
+                    <td>21</td>
+                    <td>Programadora</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Masculino</td>
+                    <td>32</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Gustavo</td>
+                    <td>Masculino</td>
+                    <td>43</td>
+                    <td>Cozinheiro</td>
+                </tr>
+                <tr>
+                    <td>Bella</td>
+                    <td>Feminino</td>
+                    <td>28</td>
+                    <td>Escritora</td>
+                </tr>
+                <tr>
+                    <td>Nathan</td>
+                    <td>Masculino</td>
+                    <td>29</td>
+                    <td>Veterinario</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Feminino</td>
+                    <td>36</td>
+                    <td>Medica</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
