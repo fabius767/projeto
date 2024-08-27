@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/C.ico" type="image/x-icon">
+    <title>Output</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elemento Output</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <fieldset>
+            <legend>Soma de numeros</legend>
+            <p>
+                <label for="n1">Numero 1:</label>
+                <input type="number" name="n1" id="n1" required oninput="soma.innerHTML= Number(n1.value) + Number(n2.value)">
+                
+                <label for="n1"> Numero 2:</label>
+                <input type="number" name="n2" id="n2" required oninput="soma.innerHTML= Number(n1.value) + Number(n2.value)">
+            </p>
+            
+            <p>
+                <label for="soma">Soma:</label>
+                <output id="soma"></output>
+            </p>
+
+            <p>
+                <label for="num">Numero:</label>
+                <input type="range" name="inum" id="num" min="0" max="10" oninput="val.innerHTML= Number(num.value)">
+                <output id="val"></output>
+            </p>
+
+            <p>
+                <label for="ano">Em que ano voce nasceu?</label>
+                <input type="number" name="iano" id="ano" min="1950" max="2024" oninput="calcu()">
+            </p>
+
+            <p>
+                <label for="age">Sua idade e:</label>
+                <output id="age"></output>
+            </p>
+        </fieldset>
+    </form>
+    <script>
+        function calcu() {
+            let atual = new Date().getFullYear()
+            age.innerHTML = Number(atual) - Number(ano.value)
+        }
+    </script>
+</body>
+</html>

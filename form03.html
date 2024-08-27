@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/C.ico" type="image/x-icon">
+    <title>File e Enctype</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>File e Enctype</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p>
+            <label for="cor">Seleter de cores</label>
+            <input type="color" name="fff" id="cor" value="#18B0FB">
+        </p>
+        <p>
+            <label for="nivel">Nivel de satisfacao entre 0 e 20:</label>
+            <input type="range" name="level" id="nivel" min="0" max="20">
+        </p>
+        <p>
+            <label for="arr">Escolher arquivo:</label>
+            <input type="file" name="choss" id="arr">
+        </p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+</body>
+</html>

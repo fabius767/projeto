@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/C.ico" type="image/x-icon">
+    <title>Formularios</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+        }
+
+        form {
+            color: #fff;
+            background-color: #1d1c1c;
+            text-align: center;
+            font-weight: bolder;
+            width: 400px;
+            padding: 10px;
+            border-radius: 85px;
+            margin: auto;
+        }
+
+        #bo>input {
+            background-color:rgb(255, 255, 255);
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando Meu Primeiro Formulario!</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome" required autocomplete="name">
+        </p>
+        <p><label for="isobre">Sobrenome:</label> 
+            <input type="text" name="sobre" id="isobre" size="15"> 
+        </p>
+        <p><label for="passw">Senha:</label>
+            <input type="password" name="pass" id="passw" minlength="5" maxlength="15" placeholder="Minimo 8 Letras" required autocomplete="current-password">
+        </p>
+        <p>
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" name="date" id="data" required>
+        </p>
+        <p>
+            <label for="tele">Telefone:</label>
+            <input type="tel" name="te" id="tele" autocomplete="tel" pattern="^[0-9]{4}-[0-9-{4}$]" required>
+        </p>
+        <p>
+            <input type="number" name="d" id="d" min="0" max="10" placeholder="De 0 a 10" step="0.1" required>
+        </p>
+        <p id="bo">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/C.ico" type="image/x-icon">
+    <title>Select</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select, Datalist e Textarea</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p>
+            <label for="es">Estado</label>
+            <select name="br" id="es" >
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Regiao Sudeste">
+                    <option value="SP">Sao Paulo</option>
+                    <option value="MG">Mina Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                
+                <optgroup label="Regiao Nordeste">
+                    <option value="MA">Maranhao</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <label for="prof">Profissao</label>
+        <input type="text" name="prof" id="prof" list="lstprof">
+        <datalist id="lstprof">
+            <option value="ADM">Administrador</option>
+            <option value="EN">Engenheiro</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+        </datalist>
+        <p>
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="imsg" id="msg">
+
+            </textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

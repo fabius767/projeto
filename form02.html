@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/C.ico" type="image/x-icon">
+    <title>Formularios</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checkbox e Radio button</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+            <fieldset>
+                <legend>Qual sua linguagem de programação preferida?</legend>
+                <input type="checkbox" name="linguagem" id="js" value="javascript">
+                <label for="js">JavaScript</label>
+                <input type="checkbox" name="linguagem" id="php" value="PHP">
+                <label for="php">PHP</label>
+                <input type="checkbox" name="linguagem" id="python" value="Python">
+                <label for="python">Python</label>
+            </fieldset>
+            <fieldset>
+                <legend>Qual eu sexo:</legend>
+                <input type="radio" name="opcao" id="masculino" value="M">
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" name="opcao" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </fieldset>
+            <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
