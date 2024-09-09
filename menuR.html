@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/C.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Menu responsivo</title>
+    <link rel="stylesheet" href="estilo/menuAll.css">
+    <link rel="stylesheet" href="estilo/menuQuery.css">
+</head>
+<body onresize="tama()">
+    <header>
+        <h1>Menu responsivo</h1>
+        <i id="burguer" class="material-icons" onclick="menuu()">menu</i>
+        <nav id="itens">
+            <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media queries</h2>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero facilis sunt non placeat molestiae? Voluptatem nulla nisi aliquid minus, neque ipsam ab nemo odit animi quidem impedit officia aliquam sit. Facilis accusamus provident quam illum, eveniet laboriosam saepe aut quasi laborum ipsum distinctio quod animi exercitationem quos? Quo facere at illo fugit. Nihil quos facilis laborum ducimus, quisquam iure, illum quia dolorem sint maiores perspiciatis impedit nam, unde nesciunt. Voluptatibus labore repellendus, eligendi placeat vitae.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima porro dolores commodi? Esse necessitatibus quisquam, consectetur nesciunt magni, aperiam hic totam delectus architecto eum temporibus neque fugit aliquam, ea sapiente. Illum, hic sit repudiandae distinctio ab et, dolore perspiciatis corrupti enim quasi cupiditate deleniti obcaecati aut voluptates provident quisquam nostrum maiores dicta impedit ex architecto iste at. unde nam maiores nobis, voluptas obcaecati? Dolore dolorem consequuntur aspernatur. Quasi, temporibus provident eligendi doloremque voluptas tempora quis itaque sit possimus reiciendis nostrum obcaecati quisquam quia doloribus facilis nihil quo ut suscipit adipisci ad consequuntur iure. Libero, molestias.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, repellendus incidunt. Officia, deleniti eos qui eum, perferendis provident non possimus autem sint expedita eius iste adipisci nihil omnis suscipit rem harum. Vitae doloremque blanditiis voluptate fugiat  iusto harum nam earum. Aliquam doloremque, repudiandae facilis sit ut nobis perspiciatis alias reiciendis explicabo quae, officia aspernatur autem mollitia? Expedita accusantium ut magni vel obcaecati, nesciunt cumque doloremque molestias animi, maxime quam asperiores voluptatum aliquam voluptatibus autem corrupti eaque veniam error repudiandae eos neque! Repudiandae error harum cupiditate eveniet aspernatur!</p>
+        </article>
+    </main>
+</body>
+<script>
+    function menuu() {
+        let item = document.getElementById('itens')
+        
+        if (item.style.display == 'block') {
+            item.style.display = 'none'
+        } else {
+            item.style.display = 'block'
+        }
+    }
+
+    function tama() {
+        let item = document.getElementById('itens')
+        
+        if (window.innerWidth >= 768) {
+            item.style.display = 'block'
+        } else {
+            item.style.display = 'none'
+        }
+    }
+</script>
+</html>

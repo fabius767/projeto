@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Estilo para (Portrait) */
+
+body {
+    background: url('../imagens/cev-portrait.jpg') center bottom/ cover no-repeat fixed; 
+}
+
+h1 {
+    display: none;
+}
