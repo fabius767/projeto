@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: walt;
-    src: url('../font/wwwa.ttf') format('truetype');
+    src: url('wwwa.ttf') format('truetype');
 }
 
 * {
