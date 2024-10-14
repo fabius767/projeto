@@ -17,7 +17,7 @@ html::-webkit-scrollbar {
 }
 
 body, html {
-    background: #527AD4 url('../img/stars.png') center center /cover no-repeat fixed;
+    background: #527AD4 url('stars.png') center center /cover no-repeat fixed;
     /*background-color: #527AD4; */
     width: 100vw;
     height: 100vh;
