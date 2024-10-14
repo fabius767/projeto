@@ -45,7 +45,7 @@ main {
 
 #imge {
     display: block;
-    background: #527AD4 url('../img/mickeyy.jpg') center center/ cover no-repeat;
+    background: #527AD4 url('mickeyy.jpg') center center/ cover no-repeat;
     height: 230px;
 }
 
