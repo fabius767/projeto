@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body, html {
-        background: #527AD4 url('../img/stars.png') center center /cover no-repeat fixed; 
+        background: #527AD4 url('stars.png') center center /cover no-repeat fixed; 
         
         /*background-image: linear-gradient(to bottom, #97e6e9, #527AD4);*/ 
     }
@@ -13,7 +13,7 @@
     }
 
     #imge {
-        background-image: url('../img/alien.jpg');
+        background-image: url('alien.jpg');
         float: left;
         width: 180px;
         height: 400px;
@@ -36,7 +36,7 @@
     }
 
     #imge {
-        background-image: url('../img/cinde.jpg');
+        background-image: url('cinde.jpg');
         background-position: center;
         float: right;
         width: 250px;
