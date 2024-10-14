@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body, html {
+        background: #527AD4 url('../img/stars.png') center center /cover no-repeat fixed; 
+        
+        /*background-image: linear-gradient(to bottom, #97e6e9, #527AD4);*/ 
+    }
+    
+    #login {
+        width: 600px;
+        height: 400px;
+    }
+
+    #imge {
+        background-image: url('../img/alien.jpg');
+        float: left;
+        width: 180px;
+        height: 400px;
+    } 
+
+    #formu {
+        float: right;
+        width: 420px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body, html {
+        background-image: linear-gradient(to bottom, #97e6e9, #527AD4);
+    }
+    
+    #login {
+        width: 700px;
+        height: 400px;
+    }
+
+    #imge {
+        background-image: url('../img/cinde.jpg');
+        background-position: center;
+        float: right;
+        width: 250px;
+        height: 400px;
+    } 
+
+    #formu {
+        float: left;
+        width: 420px;
+    }
+
+    #ee {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}

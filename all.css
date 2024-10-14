@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: walt;
+    src: url('../font/wwwa.ttf') format('truetype');
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    background: #527AD4 url('../img/stars.png') center center /cover no-repeat fixed;
+    /*background-color: #527AD4; */
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    background-color: #fff;
+    width: 300px;
+    height: 520px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #2a3f70d2;
+}
+
+#imge {
+    display: block;
+    background: #527AD4 url('../img/mickeyy.jpg') center center/ cover no-repeat;
+    height: 230px;
+}
+
+#formu {
+    display: block;
+    padding: 10px;
+}
+
+#formu > h1 {
+    color: #272727;
+    font-family: walt;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formu > p {
+    color: #464545;
+    font-size: small;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.caixa {
+    display: block;
+    background-color: #527AD4;
+    height: 40px;
+    border-radius: 6px;
+    margin: 5px 0px;
+}
+
+.caixa > i {
+    color: #fff;
+    font-size: 1.9em;
+    width: 35px;
+    padding: 5px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.caixa > input {
+    background-color: #86a4eb;
+    width: calc(100% - 41px);
+    height: 34px;
+    padding: 18px;
+    border: #527AD4;
+    border-radius: 20px 5px 5px 20px;
+
+    transform: translateY(-10px);
+}
+
+.caixa > input:focus-within {
+    background-color: #fff;
+    outline: none;
+}
+
+label {
+    display: none;
+}
+
+#ee {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    background-color: #b8c6e7;
+    width: 75px;
+    padding: 10px;
+    border: 2px solid #334b81;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: small;
+    color: #000000;
+    background-color: #b6b6b6;
+    width: 100px;
+    padding: 3px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+a:hover {
+    text-decoration: underline;
+}
